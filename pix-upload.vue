@@ -1,4 +1,4 @@
-<!-- v2: added basic functionalitties no delete button etc -->
+<!-- v2 added basic functionalitties no delete button etc -->
 <template>
     <div class="custom-file b-form-file">
         <div class="input-group mb-3">
@@ -41,7 +41,7 @@ export default {
 
     methods: {
         handleClick() {
-            if (disabled) {
+            if (this.readOnly) {
                 return;
             }
             this.$refs.file.click()
