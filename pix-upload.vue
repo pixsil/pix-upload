@@ -8,7 +8,7 @@
                 <span v-else class="d-block" style="pointer-events: none;">File uploaded</span>
             </label>
             <input type="file"
-                   :disabled="disabled"
+                   :disabled="readOnly"
                    accept="application/pdf"
                    class="custom-file-input"
                    ref="file"
